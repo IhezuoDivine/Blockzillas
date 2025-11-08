@@ -1,0 +1,97 @@
+
+.page {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 80px 20px 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.explore-page h1 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* NFT Card Styles */
+.nft-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.nft-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 198, 255, 0.3);
+}
+
+.nft-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.nft-card:hover img {
+  transform: scale(1.05);
+}
+
+.nft-card h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: var(--main-color);
+}
+
+.nft-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.nft-card .price {
+  font-weight: bold;
+  color: #00ffea;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Optional: small badge for series */
+.nft-card .series {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .explore-page h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .nft-card h2 {
+    font-size: 20px;
+  }
+  .nft-card p, .nft-card .price {
+    font-size: 14px;
+  }
+}

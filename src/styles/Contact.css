@@ -1,0 +1,89 @@
+.contact-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+
+.contact-desc {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contact-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: var(--bg-color);
+}
+
+.contact-btn.discord {
+  background-color: #5865f2;
+}
+
+.contact-btn.discord:hover {
+  background-color: #4752c4;
+}
+
+.contact-btn.telegram {
+  background-color: #0088cc;
+}
+
+.contact-btn.telegram:hover {
+  background-color: #0077b3;
+}
+
+.contact-btn.x-link {
+  background-color: #1da1f2;
+}
+
+.contact-btn.x-link:hover {
+  background-color: #0d8ddb;
+}
+
+.contact-note {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact-header {
+    font-size: 28px;
+  }
+  .contact-desc {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .contact-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+  .contact-note {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,28 @@
+.Navcontainer {
+  background-color: #12173b;
+  padding: 30px 10px;
+  font-weight: bolder;
+  max-width: 600px;
+  position: absolute;
+  top: 60px;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  z-index: 99;
+  overflow-y: auto;
+  height: 100vh;
+  cursor: pointer;
+  right: 0%;
+  margin-bottom: 30px;
+}
+.navitems li {
+  font-size: 18px;
+  padding: 20px;
+  color: var(--text-color);
+}
+.navitems li a {
+  color: var(--text-color);
+}
+.navitems li:hover {
+  font-size: 20px;
+}

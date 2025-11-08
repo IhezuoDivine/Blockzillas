@@ -1,0 +1,134 @@
+
+
+.about-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 80px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.about-header {
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.about-desc {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.about-item {
+  background-color: var(--second-bg);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 198, 255, 0.3);
+}
+
+.about-item h2 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.about-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Team section */
+.team-section {
+  margin-top: 50px;
+}
+
+.team-header {
+  font-size: 28px;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: var(--second-bg);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  max-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 198, 255, 0.3);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about-header {
+    font-size: 28px;
+  }
+  .about-desc {
+    font-size: 16px;
+  }
+  .about-section {
+    gap: 20px;
+  }
+  .about-item {
+    max-width: 90%;
+  }
+  .team-header {
+    font-size: 24px;
+  }
+  .team-card {
+    max-width: 150px;
+  }
+  .team-card h3 {
+    font-size: 16px;
+  }
+  .team-card p {
+    font-size: 12px;
+  }
+}

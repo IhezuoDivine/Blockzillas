@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+:root {
+  --bg-color: #0a0e2a;
+  --second-bg: #12173b;
+  --main-color: #00c6ff;
+  --text-color: white;
+  --accent-color: #00ffea;
+}
+body {
+  background-color: #0a0e2a;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  background-color: #12173b;
+}
+
+.button,
+.link {
+  background-color: #00c6ff;
+  color: #0a0e2a;
+  transition: all 0.3s ease;
+}
